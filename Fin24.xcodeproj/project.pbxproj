@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFFEDD3522C902530069D2BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDD3422C902530069D2BB /* AppDelegate.swift */; };
+		FFFEDD3722C902530069D2BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDD3622C902530069D2BB /* ViewController.swift */; };
+		FFFEDD3A22C902530069D2BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFEDD3822C902530069D2BB /* Main.storyboard */; };
+		FFFEDD3C22C902560069D2BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFFEDD3B22C902560069D2BB /* Assets.xcassets */; };
+		FFFEDD3F22C902560069D2BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFEDD3D22C902560069D2BB /* LaunchScreen.storyboard */; };
+		FFFEDD4A22C902560069D2BB /* Fin24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDD4922C902560069D2BB /* Fin24Tests.swift */; };
+		FFFEDD5522C902560069D2BB /* Fin24UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDD5422C902560069D2BB /* Fin24UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFFEDD4622C902560069D2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFEDD2922C902530069D2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFFEDD3022C902530069D2BB;
+			remoteInfo = Fin24;
+		};
+		FFFEDD5122C902560069D2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFEDD2922C902530069D2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFFEDD3022C902530069D2BB;
+			remoteInfo = Fin24;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFFEDD3122C902530069D2BB /* Fin24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fin24.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFEDD3422C902530069D2BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFFEDD3622C902530069D2BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFFEDD3922C902530069D2BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFFEDD3B22C902560069D2BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFFEDD3E22C902560069D2BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFFEDD4022C902560069D2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFEDD4522C902560069D2BB /* Fin24Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fin24Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFEDD4922C902560069D2BB /* Fin24Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fin24Tests.swift; sourceTree = "<group>"; };
+		FFFEDD4B22C902560069D2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFEDD5022C902560069D2BB /* Fin24UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fin24UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFEDD5422C902560069D2BB /* Fin24UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fin24UITests.swift; sourceTree = "<group>"; };
+		FFFEDD5622C902560069D2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFFEDD2E22C902530069D2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFEDD4222C902560069D2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFEDD4D22C902560069D2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFFEDD2822C902530069D2BB = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD3322C902530069D2BB /* Fin24 */,
+				FFFEDD4822C902560069D2BB /* Fin24Tests */,
+				FFFEDD5322C902560069D2BB /* Fin24UITests */,
+				FFFEDD3222C902530069D2BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFFEDD3222C902530069D2BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD3122C902530069D2BB /* Fin24.app */,
+				FFFEDD4522C902560069D2BB /* Fin24Tests.xctest */,
+				FFFEDD5022C902560069D2BB /* Fin24UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFEDD3322C902530069D2BB /* Fin24 */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD3422C902530069D2BB /* AppDelegate.swift */,
+				FFFEDD3622C902530069D2BB /* ViewController.swift */,
+				FFFEDD3822C902530069D2BB /* Main.storyboard */,
+				FFFEDD3B22C902560069D2BB /* Assets.xcassets */,
+				FFFEDD3D22C902560069D2BB /* LaunchScreen.storyboard */,
+				FFFEDD4022C902560069D2BB /* Info.plist */,
+			);
+			path = Fin24;
+			sourceTree = "<group>";
+		};
+		FFFEDD4822C902560069D2BB /* Fin24Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD4922C902560069D2BB /* Fin24Tests.swift */,
+				FFFEDD4B22C902560069D2BB /* Info.plist */,
+			);
+			path = Fin24Tests;
+			sourceTree = "<group>";
+		};
+		FFFEDD5322C902560069D2BB /* Fin24UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD5422C902560069D2BB /* Fin24UITests.swift */,
+				FFFEDD5622C902560069D2BB /* Info.plist */,
+			);
+			path = Fin24UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFFEDD3022C902530069D2BB /* Fin24 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFEDD5922C902560069D2BB /* Build configuration list for PBXNativeTarget "Fin24" */;
+			buildPhases = (
+				FFFEDD2D22C902530069D2BB /* Sources */,
+				FFFEDD2E22C902530069D2BB /* Frameworks */,
+				FFFEDD2F22C902530069D2BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fin24;
+			productName = Fin24;
+			productReference = FFFEDD3122C902530069D2BB /* Fin24.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFFEDD4422C902560069D2BB /* Fin24Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFEDD5C22C902560069D2BB /* Build configuration list for PBXNativeTarget "Fin24Tests" */;
+			buildPhases = (
+				FFFEDD4122C902560069D2BB /* Sources */,
+				FFFEDD4222C902560069D2BB /* Frameworks */,
+				FFFEDD4322C902560069D2BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFFEDD4722C902560069D2BB /* PBXTargetDependency */,
+			);
+			name = Fin24Tests;
+			productName = Fin24Tests;
+			productReference = FFFEDD4522C902560069D2BB /* Fin24Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFFEDD4F22C902560069D2BB /* Fin24UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFEDD5F22C902560069D2BB /* Build configuration list for PBXNativeTarget "Fin24UITests" */;
+			buildPhases = (
+				FFFEDD4C22C902560069D2BB /* Sources */,
+				FFFEDD4D22C902560069D2BB /* Frameworks */,
+				FFFEDD4E22C902560069D2BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFFEDD5222C902560069D2BB /* PBXTargetDependency */,
+			);
+			name = Fin24UITests;
+			productName = Fin24UITests;
+			productReference = FFFEDD5022C902560069D2BB /* Fin24UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFFEDD2922C902530069D2BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Manenga Mungandi";
+				TargetAttributes = {
+					FFFEDD3022C902530069D2BB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FFFEDD4422C902560069D2BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FFFEDD3022C902530069D2BB;
+					};
+					FFFEDD4F22C902560069D2BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FFFEDD3022C902530069D2BB;
+					};
+				};
+			};
+			buildConfigurationList = FFFEDD2C22C902530069D2BB /* Build configuration list for PBXProject "Fin24" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFFEDD2822C902530069D2BB;
+			productRefGroup = FFFEDD3222C902530069D2BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFFEDD3022C902530069D2BB /* Fin24 */,
+				FFFEDD4422C902560069D2BB /* Fin24Tests */,
+				FFFEDD4F22C902560069D2BB /* Fin24UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFFEDD2F22C902530069D2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFEDD3F22C902560069D2BB /* LaunchScreen.storyboard in Resources */,
+				FFFEDD3C22C902560069D2BB /* Assets.xcassets in Resources */,
+				FFFEDD3A22C902530069D2BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFEDD4322C902560069D2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFEDD4E22C902560069D2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFFEDD2D22C902530069D2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFEDD3722C902530069D2BB /* ViewController.swift in Sources */,
+				FFFEDD3522C902530069D2BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFEDD4122C902560069D2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFEDD4A22C902560069D2BB /* Fin24Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFEDD4C22C902560069D2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFEDD5522C902560069D2BB /* Fin24UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFFEDD4722C902560069D2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFFEDD3022C902530069D2BB /* Fin24 */;
+			targetProxy = FFFEDD4622C902560069D2BB /* PBXContainerItemProxy */;
+		};
+		FFFEDD5222C902560069D2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFFEDD3022C902530069D2BB /* Fin24 */;
+			targetProxy = FFFEDD5122C902560069D2BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFFEDD3822C902530069D2BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFFEDD3922C902530069D2BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFFEDD3D22C902560069D2BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFFEDD3E22C902560069D2BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFFEDD5722C902560069D2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFFEDD5822C902560069D2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFFEDD5A22C902560069D2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Fin24/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Fin24;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFFEDD5B22C902560069D2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Fin24/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Fin24;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFFEDD5D22C902560069D2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Fin24Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Fin24Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fin24.app/Fin24";
+			};
+			name = Debug;
+		};
+		FFFEDD5E22C902560069D2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Fin24Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Fin24Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fin24.app/Fin24";
+			};
+			name = Release;
+		};
+		FFFEDD6022C902560069D2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Fin24UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Fin24UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fin24;
+			};
+			name = Debug;
+		};
+		FFFEDD6122C902560069D2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Fin24UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Fin24UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fin24;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFFEDD2C22C902530069D2BB /* Build configuration list for PBXProject "Fin24" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFEDD5722C902560069D2BB /* Debug */,
+				FFFEDD5822C902560069D2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFFEDD5922C902560069D2BB /* Build configuration list for PBXNativeTarget "Fin24" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFEDD5A22C902560069D2BB /* Debug */,
+				FFFEDD5B22C902560069D2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFFEDD5C22C902560069D2BB /* Build configuration list for PBXNativeTarget "Fin24Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFEDD5D22C902560069D2BB /* Debug */,
+				FFFEDD5E22C902560069D2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFFEDD5F22C902560069D2BB /* Build configuration list for PBXNativeTarget "Fin24UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFEDD6022C902560069D2BB /* Debug */,
+				FFFEDD6122C902560069D2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFFEDD2922C902530069D2BB /* Project object */;
+}
