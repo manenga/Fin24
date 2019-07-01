@@ -16,6 +16,7 @@ class NewsDetailViewController: UIViewController {
     @IBOutlet weak var articleHeadline: UILabel!
     @IBOutlet weak var articleImg: UIImageView!
     @IBOutlet weak var articleDetail: UITextView!
+    @IBOutlet weak var articleDate: UILabel!
     
     class func create(article: NewsArticle) -> NewsDetailViewController {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
@@ -35,6 +36,7 @@ class NewsDetailViewController: UIViewController {
         let prefixIndex = article.title.index(article.title.startIndex, offsetBy: 12)
         articleHeadline.text = String(article.title.suffix(from: prefixIndex))
         articleDetail.text = article.detail
+        articleDate.text = article.pubDate
         
         if article.imageURL.isEmpty {
             articleImg.isHidden = true

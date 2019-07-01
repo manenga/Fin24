@@ -33,7 +33,6 @@ class ArticleTableViewCell: UITableViewCell {
     }
     
     public func set(article: NewsArticle) {
-        // (String.IndexDistance.init("Fin24.com | ") ?? nil)!
         let prefixIndex = article.title.index(article.title.startIndex, offsetBy: 12)
         headlineLabel.text = String(article.title.suffix(from: prefixIndex))
         dateLabel.text = article.pubDate

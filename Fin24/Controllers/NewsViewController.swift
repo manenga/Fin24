@@ -54,6 +54,7 @@ class NewsViewController: UIViewController {
         navigationItem.title = "Fin24 Tech"
         navigationController?.navigationBar.titleTextAttributes = [ .foregroundColor : UIColor.white ]
         navigationController?.navigationBar.barTintColor = color
+        navigationController?.navigationBar.isTranslucent = false
         
         NotificationCenter.default.addObserver(self, selector: #selector(reloadSuccessful(notification:)), name: Notification.Name.getAllNewsRequestSuccess, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(reloadUnsuccessful(notification:)), name: Notification.Name.getAllNewsRequestFailure, object: nil)

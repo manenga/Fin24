@@ -67,21 +67,12 @@ class LoginViewController: UIViewController {
             print("Successfully decrypted username and password.")
         } catch {
             print("Could not decrypt username and password.")
-            print(error)
+            self.loadingView.isHidden = true
+            isLoggedIn = false
         }
         
         if !isShowingWalkthrough {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
-                // check if user is logged in and proceed to news view controller or stay here
-                
-                if self.isLoggedIn {
-                    self.proceedToNews()
-                } else {
-                    UIView.animate(withDuration: 2, animations: {
-                         self.loadingView.isHidden = true
-                    })
-                }
-            })
+            attemptLogginIn()
         }
     }
     
@@ -125,12 +116,22 @@ class LoginViewController: UIViewController {
         
         
         self.loadingView.isHidden = false
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            // proceed to news view controller
-            self.isLoggedIn = true
+        self.isLoggedIn = true // proceed to news view controller
+        attemptLogginIn()
+    }
+    
+    private func attemptLogginIn() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+            // check if user is logged in and proceed to news view controller or stay here
+            
             if self.isLoggedIn {
                 self.proceedToNews()
+            } else {
+                if !self.loadingView.isHidden {
+                    UIView.animate(withDuration: 2, animations: {
+                        self.loadingView.isHidden = true
+                    })
+                }
             }
         })
     }

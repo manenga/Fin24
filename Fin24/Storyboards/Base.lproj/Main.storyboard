@@ -135,7 +135,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-1g-Sh3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.094117647060000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.25882352939999997" green="0.094117647060000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="E4n-MF-jVJ" id="7pp-A3-OUa"/>
                                     <outlet property="delegate" destination="E4n-MF-jVJ" id="npn-Mm-SkI"/>
@@ -293,6 +295,7 @@
                         <viewLayoutGuide key="safeArea" id="dqh-KF-4iu"/>
                     </view>
                     <connections>
+                        <outlet property="articleDate" destination="8eD-az-sIR" id="9sl-UZ-jRT"/>
                         <outlet property="articleDetail" destination="h9y-dk-KaY" id="thD-Ag-hyQ"/>
                         <outlet property="articleHeadline" destination="Aw0-ag-TZS" id="KmW-Oa-CXi"/>
                         <outlet property="articleImg" destination="pbA-b5-VT0" id="W1Y-bM-1U0"/>

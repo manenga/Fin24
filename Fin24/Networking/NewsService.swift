@@ -13,6 +13,8 @@ import SwiftyXML
 
 public class NewsService {
     
+    private let debug = false // extra logs in debug
+    
     // Get the default Realm
     private let realm = try! Realm()
     
@@ -31,9 +33,11 @@ public class NewsService {
     public func fetchNews() {
         Alamofire.request("http://feeds.news24.com/articles/Fin24/Tech/rss").responseJSON { response in
             
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                print("Data: \(utf8Text)") // original server data as UTF8 string
-                print()
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8), !data.isEmpty {
+                if self.debug {
+                    print("Data: \(utf8Text)") // original server data as UTF8 string
+                    print()
+                }
                 
                 // convert to JSON
                 if let xml = XML(data: data) {
@@ -55,14 +59,19 @@ public class NewsService {
         let description = item[.key("description")].stringValue
         let link = item.link.stringValue
         let pubDate = item[.key("pubDate")].stringValue
-        let enclosure = item[.key("enclosure")]
-        let imageUrl  = enclosure[.key("url")].stringValue
+        var imageUrl = ""
         
-        print("Item title: \(title)")
-        print("Item description: \(description)")
-        print("Item link: \(link)")
-        print("Item image url: \(imageUrl)")
-        print()
+        if let enclosure = item[.key("enclosure")].xml {
+            imageUrl = enclosure[.attribute("url")].stringValue
+        }
+        
+        if debug {
+            print("Item title: \(title)")
+            print("Item description: \(description)")
+            print("Item link: \(link)")
+            print("Item image url: \(imageUrl)")
+            print()
+        }
         
         let article = NewsArticle()
         article.title = title
@@ -70,12 +79,8 @@ public class NewsService {
         article.linkURL = link
         article.imageURL = imageUrl
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "ddd, MMM yyyy"
-        
-        if let date = formatter.date(from: pubDate) {
-            article.pubDate = formatter.string(from: date)
-        }
+        let suffixIndex = pubDate.index(pubDate.startIndex, offsetBy: 16)
+        article.pubDate = String(pubDate.prefix(upTo: suffixIndex))
         
         try! realm.write {
             realm.add(article)

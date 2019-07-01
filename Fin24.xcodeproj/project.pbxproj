@@ -108,6 +108,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF4ED24B22CAA75C005E4B26 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD3D22C902560069D2BB /* LaunchScreen.storyboard */,
+				FFFEDD3822C902530069D2BB /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FF4ED24C22CAA777005E4B26 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD7722C9376C0069D2BB /* NewsService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FF4ED24D22CAA78C005E4B26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDD3B22C902560069D2BB /* Assets.xcassets */,
+				FFFEDD7922C937C80069D2BB /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FFFEDD2822C902530069D2BB = {
 			isa = PBXGroup;
 			children = (
@@ -134,13 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				FFFEDD3422C902530069D2BB /* AppDelegate.swift */,
-				FFFEDD3D22C902560069D2BB /* LaunchScreen.storyboard */,
-				FFFEDD3822C902530069D2BB /* Main.storyboard */,
-				FFFEDD7722C9376C0069D2BB /* NewsService.swift */,
-				FFFEDD7922C937C80069D2BB /* Extensions.swift */,
 				FFFEDD7122C90B510069D2BB /* Cells */,
 				FFFEDD7222C90BC40069D2BB /* Controllers */,
-				FFFEDD3B22C902560069D2BB /* Assets.xcassets */,
+				FF4ED24C22CAA777005E4B26 /* Networking */,
+				FF4ED24D22CAA78C005E4B26 /* Resources */,
+				FF4ED24B22CAA75C005E4B26 /* Storyboards */,
 				FFFEDD4022C902560069D2BB /* Info.plist */,
 			);
 			path = Fin24;
