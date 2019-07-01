@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="115" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="Fin24" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsd-sq-0cb">
+                        <rect key="frame" x="0.0" y="2" width="320" height="110.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IhA-0S-A5y">
+                                <rect key="frame" x="8" y="8" width="304" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-Tg-O8I">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GAE-Tg-O8I" secondAttribute="height" multiplier="1:1" id="W1h-Bb-2U3"/>
+                                            <constraint firstAttribute="height" constant="50" id="pET-cI-t3j"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TvO-1a-Zgk">
+                                        <rect key="frame" x="58" y="0.0" width="246" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Fin24.com | SpaceX launches satellites for space-based broadband network" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG6-YI-2rJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="246" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat, 25 May 2019" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEJ-yj-KHD">
+                                                <rect key="frame" x="0.0" y="36.5" width="246" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                                                <color key="textColor" red="0.50980392156862742" green="1" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spq-dD-9kj">
+                                <rect key="frame" x="8" y="66" width="304" height="36.5"/>
+                                <string key="text">Elon Musk’s Space Exploration Technologies Corp. launched 60 Starlink satellites late Thursday, a key step in Musk’s vision of creating a space-based network to provide broadband service around the world.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.93725490199999995" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25882352939999997" green="0.094117647060000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IhA-0S-A5y" firstAttribute="leading" secondItem="hsd-sq-0cb" secondAttribute="leading" constant="8" id="12O-d0-tsc"/>
+                            <constraint firstItem="IhA-0S-A5y" firstAttribute="top" secondItem="hsd-sq-0cb" secondAttribute="top" constant="8" id="5mQ-dK-f76"/>
+                            <constraint firstItem="Spq-dD-9kj" firstAttribute="leading" secondItem="IhA-0S-A5y" secondAttribute="leading" id="GLN-x0-aPE"/>
+                            <constraint firstAttribute="trailing" secondItem="IhA-0S-A5y" secondAttribute="trailing" constant="8" id="J8b-ON-bV8"/>
+                            <constraint firstItem="Spq-dD-9kj" firstAttribute="top" secondItem="IhA-0S-A5y" secondAttribute="bottom" constant="8" id="SkK-fG-nM8"/>
+                            <constraint firstItem="Spq-dD-9kj" firstAttribute="trailing" secondItem="IhA-0S-A5y" secondAttribute="trailing" id="gIY-Pf-gEM"/>
+                            <constraint firstAttribute="bottom" secondItem="Spq-dD-9kj" secondAttribute="bottom" constant="8" id="gaC-GT-emO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hsd-sq-0cb" secondAttribute="trailing" id="YqU-8j-0Qj"/>
+                    <constraint firstItem="hsd-sq-0cb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="aun-tl-9H6"/>
+                    <constraint firstItem="hsd-sq-0cb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c43-0R-jFy"/>
+                    <constraint firstAttribute="bottom" secondItem="hsd-sq-0cb" secondAttribute="bottom" constant="2" id="rBk-0N-fDH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="articleDetail" destination="Spq-dD-9kj" id="WVe-G3-pWm"/>
+                <outlet property="articleImageView" destination="GAE-Tg-O8I" id="Lpk-LK-X0U"/>
+                <outlet property="dateLabel" destination="wEJ-yj-KHD" id="WDk-J1-mmV"/>
+                <outlet property="headlineLabel" destination="gG6-YI-2rJ" id="D8j-B2-aRo"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="59.263392857142854"/>
+        </tableViewCell>
+    </objects>
+</document>
