@@ -15,7 +15,11 @@ class LoginViewController: UIViewController {
     private let primaryColor = UIColor(red:66/255, green:23/255, blue:32/255, alpha:1.0)
     private var shownWalkthrough = UserDefaults.standard.bool(forKey: "shownWalkthrough")
     private var isLoggedIn = false
+    private var isShowingWalkthrough = false
     private var swiftyOnboard: SwiftyOnboard!
+    
+    private let key = "rosesR3dS0m3A3eBlu3Oth3S@R3N0Tee"
+    private let iv  = "ThisIsATestAaKno"
     
     private var titleArray: [String] = ["Welcome to Fin24!", "It’s a handy finance news app!", "Be the first to know"]
     private var subTitleArray: [String] = ["Get the latest finance news without lifting a finger", "Curated by our awesome content team to your specifications", "Be nice to your friends.\n Share the news with them. \n It might make them smile :)"]
@@ -37,6 +41,7 @@ class LoginViewController: UIViewController {
         
         if !self.shownWalkthrough {
             // show walkthrough
+            isShowingWalkthrough = true
             swiftyOnboard = SwiftyOnboard(frame: self.view.frame)
             swiftyOnboard.backgroundColor = UIColor.white
             swiftyOnboard.fadePages = true
@@ -50,19 +55,34 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
-            // check if user is logged in and proceed to news view controller or stay here
-            
-            if self.isLoggedIn {
-                let vc = NewsViewController()
-                self.navigationController?.present(vc, animated: true, completion: nil)
-            } else {
-                UIView.animate(withDuration: 2, animations: {
-//                    self.loadingView.alpha = 0.0 // fade out
-                     self.loadingView.isHidden = true
-                })
-            }
-        })
+        // retrieve encrypted username and password, decrypt them
+        
+        let encryptedUsername = UserDefaults.standard.string(forKey: "encryptedUsername") ?? ""
+        let encryptedPassword = UserDefaults.standard.string(forKey: "encryptedPassword") ?? ""
+        
+        do {
+            let decryptedUsername = try encryptedUsername.decrypt(key: key, iv: iv)
+            let decryptedPassword = try encryptedPassword.decrypt(key: key, iv: iv)
+            isLoggedIn = (!decryptedUsername.isEmpty && !decryptedPassword.isEmpty)
+            print("Successfully decrypted username and password.")
+        } catch {
+            print("Could not decrypt username and password.")
+            print(error)
+        }
+        
+        if !isShowingWalkthrough {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                // check if user is logged in and proceed to news view controller or stay here
+                
+                if self.isLoggedIn {
+                    self.proceedToNews()
+                } else {
+                    UIView.animate(withDuration: 2, animations: {
+                         self.loadingView.isHidden = true
+                    })
+                }
+            })
+        }
     }
     
     override func viewDidLoad() {
@@ -70,6 +90,7 @@ class LoginViewController: UIViewController {
     }
     
     @objc func handleSkip() {
+        isShowingWalkthrough = false
         swiftyOnboard.removeFromSuperview()
         UserDefaults.standard.set(true, forKey: "shownWalkthrough")
     }
@@ -89,20 +110,35 @@ class LoginViewController: UIViewController {
             return
         }
         
-//        self.loadingView.alpha = 1.0
-        self.loadingView.isHidden = false
-        
         // encrypt user name and password. store them
+        
+        do {
+            let encryptedUsername = try user.encrypt(key: key, iv: iv)
+            let encryptedPassword = try pass.encrypt(key: key, iv: iv)
+            UserDefaults.standard.set(encryptedUsername, forKey: "encryptedUsername")
+            UserDefaults.standard.set(encryptedPassword, forKey: "encryptedPassword")
+            print("Successfully encrypted username and password.")
+        } catch {
+            print("Could not encrypt username and password.")
+            print(error)
+        }
+        
+        
+        self.loadingView.isHidden = false
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
             // proceed to news view controller
             self.isLoggedIn = true
             if self.isLoggedIn {
-                let vc = NewsViewController.create()
-                let nav = UINavigationController.init(rootViewController: vc)
-                self.present(nav, animated: true, completion: nil)
+                self.proceedToNews()
             }
         })
+    }
+    
+    private func proceedToNews() {
+        let vc = NewsViewController.create()
+        let nav = UINavigationController.init(rootViewController: vc)
+        self.present(nav, animated: true, completion: nil)
     }
 }
 
