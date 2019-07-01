@@ -7,7 +7,25 @@
 		<key>Fin24.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FFFEDD3022C902530069D2BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFFEDD4422C902560069D2BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFFEDD4F22C902560069D2BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
